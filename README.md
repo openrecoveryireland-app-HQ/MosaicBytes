@@ -1,17 +1,19 @@
-# OpenRecovery
+# MosaicBytes
 
-OpenRecovery is an early-stage recovery support project being developed through the Student Inc. entrepreneurship program.
+MosaicBytes is the website and digital home for Mosaic, an early-stage recovery support app being developed through the Student Inc. entrepreneurship programme.
 
-The project is being built to explore ways of providing private, accessible and non-judgemental support between meetings, counselling sessions and other forms of recovery support.
+Mosaic is being built to explore ways of providing private, accessible, and non-judgemental support between meetings, counselling sessions, treatment, and other forms of recovery support.
 
-OpenRecovery is currently in the research, validation and prototype development stage. Feedback is being gathered from people in recovery, treatment providers and recovery support organisations to help ensure the project is built around real-world needs.
+The project is currently in the research, validation, and prototype development stage. Feedback is being gathered from people in recovery, treatment providers, and recovery support organisations to help ensure Mosaic is built around real-world needs.
 
-Current Status
-Research and stakeholder engagement ongoing
-Prototype under development
-Website and digital presence being established
-Contact
+## Current Status
 
-Email: openrecoveryireland@gmail.com
+- Research and stakeholder engagement ongoing
+- Prototype under development
+- Website and digital presence being established
 
-Website: openrecoveryireland.com
+## Contact
+
+Email: stevencondra1971@gmail.com
+
+Website: MosaicBytes.com
