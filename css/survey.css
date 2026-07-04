@@ -1243,3 +1243,212 @@ button.learn-more {
   font-weight: 700;
   color: #123f69;
 }
+.app-support-landing {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.support-hero-mini h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.support-hero-text {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+}
+
+.app-store-card,
+.mini-support-card {
+  background: #f5fafa;
+  border: 2px solid rgba(15, 168, 155, 0.35);
+  border-radius: 22px;
+  padding: 1.4rem;
+}
+
+.app-store-card h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.store-badge-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1.2rem 0;
+}
+
+.store-badge-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.store-badge {
+  height: 58px;
+  width: auto;
+  display: block;
+}
+
+.disabled-store {
+  opacity: 0.45;
+}
+
+.support-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: left;
+}
+
+.mini-support-card h3 {
+  margin-top: 0;
+  color: #123f69;
+}
+
+.mini-support-card p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 800px) {
+  .support-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .store-badge {
+    height: 52px;
+  }
+}
+/* Did You Know page */
+
+.did-you-know-page {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 2rem 1.2rem 3rem;
+}
+
+.did-you-know-intro {
+  text-align: center;
+  background: #ffffff;
+  border: 3px solid #0fa89b;
+  border-radius: 28px;
+  padding: 2.4rem 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.did-you-know-intro h1 {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  font-size: 2.4rem;
+  color: #123f69;
+}
+
+.did-you-know-intro p {
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+.fact-library {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.fact-card {
+  position: relative;
+}
+
+.did-you-know-page .fact-card {
+  background: #ffffff;
+  border: 2px solid rgba(15, 168, 155, 0.35);
+  border-radius: 24px;
+  padding: 1.7rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.did-you-know-page .fact-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 1.7rem;
+  right: 1.7rem;
+  height: 5px;
+  border-radius: 0 0 999px 999px;
+  background: #0fa89b;
+}
+
+.fact-topic {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background: #f5fafa;
+  color: #123f69;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.did-you-know-page .fact-card h2 {
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
+  color: #123f69;
+  font-size: 1.45rem;
+}
+
+.did-you-know-page .fact-card p {
+  line-height: 1.65;
+}
+
+.fact-source {
+  margin-top: 1.3rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(18, 63, 105, 0.15);
+  font-weight: 700;
+}
+
+.fact-actions {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  margin-top: 0.9rem;
+}
+
+.fact-actions a {
+  display: inline-block;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.did-you-know-page .learn-more {
+  background: #123f69;
+  color: #ffffff;
+}
+
+.back-top-link {
+  background: #f5fafa;
+  color: #123f69;
+  border: 1px solid rgba(18, 63, 105, 0.2);
+}
+
+.did-you-know-page .learn-more:hover,
+.back-top-link:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 700px) {
+  .did-you-know-intro h1 {
+    font-size: 2rem;
+  }
+
+  .did-you-know-page .fact-card {
+    padding: 1.35rem;
+  }
+}

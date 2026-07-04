@@ -87,66 +87,88 @@
   
   </header>
 
-  <main class="app-support-page">
+   <main class="app-support-page">
 
-    <section id="app-only-message" class="app-only-message">
-      <h1>Mosaic App Support</h1>
+    <section id="app-only-message" class="app-only-message app-support-landing">
+      <div class="support-hero-mini">
+        <h1>Mosaic App Support</h1>
 
-      <a
-  href="#"
-  class="app-download-button"
-  onclick="event.preventDefault(); alert('The Mosaic app download link will be added here when the app is available.');"
->
-  Download Mosaic App
-</a>
+        <p class="support-hero-text">
+            This page connects with the support buttons inside the Mosaic app.
+            Each button opens its own simple guidance section.
+        </p>
+      </div>
 
-<p class="app-download-note">
-  App download link coming soon.
-</p>
+      <div class="app-store-card">
+        <h2>App Store Links Coming Soon</h2>
 
+        <p>
+           Mosaic will be released through the app stores, not downloaded directly from this website.
+         </p>
+
+      <div class="store-badge-row">
+         <a
+           href="#"
+           class="store-badge-link"
+           onclick="event.preventDefault(); alert('The Google Play Store link will be added here when the app is available.');"
+          >
+           <img
+             src="../images/google-play-badge.png"
+             alt="Get it on Google Play"
+             class="store-badge"
+            >
+         </a>
+
+          <a
+            href="#"
+             class="store-badge-link disabled-store"
+             onclick="event.preventDefault(); alert('The Apple App Store link will be added after the Android release.');"
+            >
+            <img
+             src="../images/app-store-badge.png"
+             alt="Download on the App Store"
+             class="store-badge"
+            >
+          </a>
+       </div>
+
+          <p class="app-download-note">
+            Android is planned first. Apple will follow.
+          </p>
+     </div>
+
+      <div class="support-card-grid">
+         <div class="mini-support-card">
+           <h3>Inside the App</h3>
+        <p>
+        Support buttons in Mosaic will open the correct guidance section here.
+      </p>
+    </div>
+
+    <div class="mini-support-card">
+      <h3>Simple Guidance</h3>
       <p>
-        This area is designed to be opened from inside the Mosaic app.
+        The aim is clear, calm support without pressure, judgement, or noise.
       </p>
+    </div>
 
-      <p>
-        Each support button in the app opens its own guidance section here.
-      </p>
+         <div class="mini-support-card">
+           <h3>Private Use</h3>
+       <p>
+        Mosaic is designed as a personal support space that you use in your own way.
+       </p>
+    </div>
+  </div>
 
-      <p>
-        To access the full support sections, please use the support buttons inside
-        the Mosaic app.
-      </p>
+  <p class="support-warning">
+    Mosaic is not a medical, counselling, emergency, or crisis service.
+    If you are in immediate danger, call 112 or 999.
+  </p>
 
-      <p class="support-warning">
-        Mosaic is not a medical, counselling, emergency, or crisis service.
-        If you are in immediate danger, call 112 or 999.
-      </p>
-
-      <button onclick="history.back()" class="back-button">
-        Back
-      </button>
-    </section>
-
-    <section id="recovery-support" class="app-support-section hidden-section">
-      <h2>Recovery Support</h2>
-
-      <p>
-        Recovery support is about staying connected and not carrying difficult
-        moments alone. This section is for moments when the user needs support,
-        encouragement, or help taking the next safe step.
-      </p>
-
-      <ul>
-        <li>Contact a sponsor, trusted person, counsellor, doctor, or recovery group.</li>
-        <li>Go to a meeting if one is available.</li>
-        <li>Use the app to slow things down and focus on the next safe action.</li>
-        <li>Do not sit with a difficult moment alone.</li>
-      </ul>
-
-      <button onclick="history.back()" class="back-button">
-        Back
-      </button>
-    </section>
+  <button onclick="history.back()" class="back-button">
+    Back
+  </button>
+</section>
 
     <section id="relapse-prevention" class="app-support-section hidden-section">
       <h2>Relapse Prevention</h2>
