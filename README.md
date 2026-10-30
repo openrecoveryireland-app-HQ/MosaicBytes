@@ -14,6 +14,7 @@ The project is currently in the research, validation, and prototype development 
 
 ## Contact
 
-Email: stevencondra1971@gmail.com
+Email: steven@mosaicbytes.com
+        
 
 Website: MosaicBytes.com

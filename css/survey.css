@@ -1063,6 +1063,7 @@ section {
   color: #ffffff;
 }
 
+
 @media (max-width: 700px) {
   .support-sub-nav {
     margin: 10px 14px 22px;
@@ -1452,3 +1453,251 @@ button.learn-more {
     padding: 1.35rem;
   }
 }
+
+/* RECOVERY-FRIENDLY CAFÉS PAGE */
+
+.cafe-banner {
+  width: 100%;
+  margin: 26px auto;
+  text-align: center;
+}
+
+.cafe-banner img {
+  display: block;
+  width: 100%;
+  max-width: 950px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 26px;
+}
+
+/* COUNTY CAFÉ DIRECTORY */
+
+.county-introduction {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.county-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.county-card {
+  padding: 18px 10px;
+  border: 2px solid #008c8c;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.85);
+  color: #004f4f;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.county-card:hover {
+  background: #008c8c;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.county-card.selected {
+  background: #004f4f;
+  color: #ffffff;
+  border-color: #004f4f;
+}
+
+.county-results {
+  margin-top: 28px;
+  padding: 24px;
+  border-radius: 18px;
+  background: rgba(232, 247, 247, 0.9);
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+  .county-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .county-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .county-card {
+    padding: 15px 8px;
+    font-size: 16px;
+  }
+}
+
+/* REUSABLE DROPDOWN CARDS */
+
+.dropdown-card {
+  margin: 26px auto;
+}
+
+.dropdown-card > summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  font-size: 26px;
+  font-weight: 700;
+  color: #111111;
+  list-style: none;
+}
+
+.dropdown-card > summary::-webkit-details-marker {
+  display: none;
+}
+
+.dropdown-card > summary::after {
+  content: "+";
+  flex-shrink: 0;
+  font-size: 32px;
+  font-weight: 400;
+  color: #008c8c;
+}
+
+.dropdown-card[open] > summary::after {
+  content: "−";
+}
+
+.dropdown-card[open] > summary {
+  margin-bottom: 22px;
+}
+
+.dropdown-card > summary:focus-visible {
+  outline: 3px solid #008c8c;
+  outline-offset: 6px;
+  border-radius: 6px;
+}
+
+.dropdown-card > .dropdown-content {
+  border-top: 2px solid rgba(0, 140, 140, 0.2);
+  padding-top: 15px;
+}
+
+@media (max-width: 700px) {
+  .dropdown-card > summary {
+    font-size: 22px;
+  }
+}
+
+/* REUSABLE MOSAIC FEATURE INTRODUCTION */
+
+.fact-card.feature-intro {
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #d5dce8;
+}
+
+/* Mosaic tile header */
+
+.feature-intro-header {
+  padding: 36px 38px;
+  position: relative;
+  background: url("../images/header-tiles.png") center / cover no-repeat;
+}
+
+/* Header text */
+
+.feature-intro-header {
+  padding: 36px 38px;
+  position: relative;
+  overflow: hidden;
+  background: url("../images/header-tiles.png") center / cover no-repeat;
+}
+
+.feature-intro-header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.30);
+  pointer-events: none;
+}
+
+.feature-intro-header p,
+.feature-intro-header h1 {
+  position: relative;
+  z-index: 1;
+}
+
+.feature-intro-header p {
+  display: inline-block;
+  margin: 0 0 14px;
+  padding: 8px 14px;
+  background: rgba(255, 255, 255, 0.72);
+  border-radius: 999px;
+  color: #123f69;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: none;
+}
+
+.feature-intro-header h1 {
+  display: inline-block;
+  margin: 0;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.78);
+  border-radius: 16px;
+  color: #123f69;
+  font-size: 38px;
+  line-height: 1.2;
+  text-shadow: none;
+}
+
+/* White content area */
+
+.feature-intro-body {
+  padding: 30px 38px;
+  background: #ffffff;
+}
+
+.feature-intro-body p {
+  max-width: 750px;
+  line-height: 1.8;
+}
+
+.feature-intro-body p:first-child {
+  color: #123f69;
+  font-size: 20px;
+}
+
+/* Highlighted closing message */
+
+.feature-intro-callout {
+  background: #f2effa;
+  border-left: 5px solid #ed7137;
+  border-radius: 0 12px 12px 0;
+  padding: 16px 20px;
+  font-weight: 700;
+  color: #403568;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .feature-intro-header,
+  .feature-intro-body {
+    padding: 24px;
+  }
+
+  .feature-intro-header h1 {
+    font-size: 30px;
+  }
+}
+
+
+
+
+
+
