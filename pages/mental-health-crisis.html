@@ -1,19 +1,168 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mental Health & Crisis | Mosaic</title>
+
+  <title>Mental Health &amp; Crisis | Mosaic</title>
   <link rel="stylesheet" href="../css/survey.css">
+
+  <!-- PRESENTATION-STYLE EMERGENCY CARDS -->
+  <style>
+
+    .crisis-action-section {
+      margin: 26px auto;
+    }
+
+    .crisis-action-section h2 {
+      font-size: 26px;
+      margin: 0 0 20px;
+    }
+
+    .crisis-action-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .crisis-action-card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+      min-width: 0;
+      min-height: 280px;
+      padding: 26px;
+      border-radius: 22px;
+      text-decoration: none;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    }
+
+    .crisis-action-card h3 {
+      font-size: 24px;
+      line-height: 1.25;
+      margin: 0;
+    }
+
+    .crisis-action-card p {
+      font-size: 17px;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* EMERGENCY SERVICES */
+
+    .crisis-emergency-card {
+      background: #173f4c;
+      color: #ffffff;
+      border-top: 5px solid #e8bc6d;
+    }
+
+    .crisis-emergency-card h3,
+    .crisis-emergency-card p {
+      color: #ffffff;
+    }
+
+    .crisis-call-links {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: auto;
+    }
+
+    .crisis-call-links a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 25px;
+      font-weight: 800;
+      padding: 10px 18px;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      border-radius: 12px;
+    }
+
+    .crisis-call-links a:hover {
+      background: rgba(255, 255, 255, 0.18);
+    }
+
+    /* HSE GUIDANCE CARD */
+
+    .crisis-hse-card {
+      background: #f1f9f8;
+      border: 2px solid #008c8c;
+      color: #173f4c;
+      transition: transform 0.2s ease,
+                  box-shadow 0.2s ease;
+    }
+
+    .crisis-hse-card h3 {
+      color: #173f4c;
+    }
+
+    .crisis-hse-card p {
+      color: #243f45;
+    }
+
+    .crisis-hse-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+    }
+
+    .crisis-hse-card:focus-visible,
+    .crisis-call-links a:focus-visible {
+      outline: 3px solid #e8bc6d;
+      outline-offset: 4px;
+    }
+
+    .crisis-card-action {
+      display: inline-block;
+      margin-top: auto;
+      padding: 11px 18px;
+      border-radius: 999px;
+      background: #008c8c;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 15px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 700px) {
+
+      .crisis-action-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .crisis-action-card {
+        min-height: 0;
+        padding: 22px;
+      }
+
+      .crisis-action-card h3 {
+        font-size: 22px;
+      }
+
+      .crisis-call-links {
+        margin-top: 10px;
+      }
+
+    }
+
+  </style>
+
 </head>
 
 <body>
 
-  <img src="../images/logo100.png" alt="Mosaic logo" class="site-logo top-logo">
+  <!-- MOSAIC LOGO -->
+  <img src="../images/logo100.png"
+       alt="Mosaic logo"
+       class="site-logo top-logo">
 
+  <!-- MAIN NAVIGATION -->
   <nav class="main-nav">
     <a href="../index.html">Home</a>
-    <a href="../pages/app-guide.html">Mosaic Guide</a>
     <a href="../pages/app-support.html">App Support</a>
     <a href="../pages/did-you-know.html">Did You Know?</a>
     <a href="../pages/stats.html">Alcohol Statistics</a>
@@ -22,276 +171,593 @@
     <a href="../pages/music.html">Mosaic Music</a>
   </nav>
 
-  <nav class="support-sub-nav">
-  <a href="../pages/support.html">Support Home</a>
-  <a href="../pages/addictionsupports.html">Addiction</a>
-  <a href="../pages/peer-support-meetings.html">Meetings</a>
-  <a href="../pages/helplines-directories-professional-support.html">Helplines</a>
-  <a href="../pages/rtc.html">Treatment Centres</a>
-  <a href="../pages/community-addiction-supports.html">Community</a>
-  <a href="../pages/mental-health-crisis.html">Mental Health</a>
-  <a href="../pages/abuse-protection.html">Abuse & Safety</a>
-  <a href="../pages/housing-welfare-legal.html">Housing / Money / Legal</a>
-  <a href="../pages/research-public-information.html">Research</a>
-</nav>
+  <!-- MOSAIC PAGE HEADING -->
+  <section class="fact-card feature-intro"
+           style="max-width:950px; width:calc(100% - 36px); margin:20px auto;">
 
-  <main class="survey-page">
-    <div id="top"></div>
+    <div class="feature-intro-header"
+         style="text-align:center;">
 
-    <section class="survey-intro fact-card">
-      <h1>I Feel Unsafe or in Crisis</h1>
-      <p>
-        Crisis, emotional support, mental health information, and urgent support contacts.
-      </p>
-    </section>
+      <h1>Mental Health &amp; Crisis</h1>
 
+    </div>
+  </section>
+
+  <!-- SUPPORT NAVIGATION -->
+  <nav class="support-sub-nav" aria-label="Support categories">
+
+    <a href="../pages/support.html">Support Home</a>
+    <a href="../pages/addictionsupports.html">Addiction</a>
+    <a href="../pages/peer-support-meetings.html">Meetings</a>
+    <a href="../pages/helplines-directories-professional-support.html">Helplines</a>
+    <a href="../pages/rtc.html">Treatment Centres</a>
+    <a href="../pages/community-addiction-supports.html">Community</a>
+    <a href="../pages/mental-health-crisis.html" class="support-sub-active" aria-current="page">Mental Health</a>
+    <a href="../pages/abuse-protection.html">Abuse &amp; Safety</a>
+    <a href="../pages/housing-welfare-legal.html">Housing / Money / Legal</a>
+    <a href="../pages/research-public-information.html">Research</a>
+
+  </nav>
+
+  <main class="survey-page" id="top">
+
+    <!-- INTRODUCTION -->
     <section class="fact-card">
-      <h2>If there is immediate danger</h2>
 
-      <div class="support-card">
-        <h3>Emergency Services</h3>
+      <h2>I Feel Unsafe or in Crisis</h2>
 
-        <p>
-          If you or someone else is in immediate danger, or someone may harm themselves
-          or someone else, call emergency services now or go to the nearest Emergency Department.
-        </p>
+      <p>
+        Crisis, emotional support, mental health information,
+        and urgent support contacts.
+      </p>
 
-        <p class="credit">
-          Emergency: 112 or 999
-        </p>
-      </div>
-
-      <div class="support-card">
-        <h3>HSE Urgent Mental Health Crisis Advice</h3>
-
-        <p>
-          HSE guidance on what to do if you or someone you know needs urgent help
-          for a mental health crisis.
-        </p>
-
-        <p class="credit">
-          <a href="https://www2.hse.ie/mental-health/services-support/get-urgent-help/" target="_blank" rel="noopener noreferrer" class="learn-more">Visit Website</a>
-        </p>
-      </div>
     </section>
+
+    <!-- ===================================== -->
+    <!-- IMMEDIATE DANGER CARDS -->
+    <!-- ===================================== -->
+
+    <section class="crisis-action-section"
+             aria-labelledby="immediate-danger-heading">
+
+      <h2 id="immediate-danger-heading">
+        If there is immediate danger
+      </h2>
+
+      <div class="crisis-action-grid">
+
+        <!-- EMERGENCY SERVICES -->
+        <article class="crisis-action-card crisis-emergency-card">
+
+          <h3>Emergency Services</h3>
+
+          <p>
+            If you or someone else is in immediate danger,
+            call emergency services or go to your nearest
+            Emergency Department.
+          </p>
+
+          <div class="crisis-call-links">
+
+            <a href="tel:112" aria-label="Call emergency services on 112">
+              112
+            </a>
+
+            <span>or</span>
+
+            <a href="tel:999" aria-label="Call emergency services on 999">
+              999
+            </a>
+
+          </div>
+
+        </article>
+
+        <!-- HSE GUIDANCE -->
+        <!-- THE ENTIRE CARD IS CLICKABLE -->
+
+        <a href="https://www2.hse.ie/mental-health/services-support/get-urgent-help/"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="crisis-action-card crisis-hse-card">
+
+          <h3>HSE Urgent Mental Health Crisis Advice</h3>
+
+          <p>
+            HSE guidance on what to do if you
+            or someone you know needs urgent help
+            for a mental health crisis.
+          </p>
+
+          <span class="crisis-card-action">
+            Visit HSE Guidance
+          </span>
+
+        </a>
+
+      </div>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- SEARCH -->
+    <!-- ===================================== -->
 
     <section class="support-search-box">
-      <label for="supportSearch">Search crisis supports</label>
+
+      <label for="supportSearch">
+        Search crisis supports
+      </label>
+
       <input
         type="text"
         id="supportSearch"
         placeholder="Search Samaritans, Pieta, text, HSE, young people..."
       >
+
     </section>
 
+    <!-- ===================================== -->
+    <!-- TALK TO SOMEONE NOW -->
+    <!-- ===================================== -->
+
     <section class="fact-card">
+
       <h2>Talk to Someone Now</h2>
 
-      <div class="support-card">
-        <h3>Samaritans</h3>
+      <p>
+        Select an organisation below to view
+        its contact details and support information.
+      </p>
 
-        <p>
-          Free, confidential emotional support available day or night for anyone
-          experiencing distress, loneliness, anxiety, or struggling to cope.
-        </p>
+      <!-- SAMARITANS -->
+      <details class="support-card dropdown-card service-dropdown"
+               data-search-terms="samaritans emotional support confidential distress anxiety loneliness">
 
-        <p class="credit">
-          Phone: 116 123
-          <a href="mailto:jo@samaritans.ie" class="learn-more">jo@samaritans.ie</a>
-          <a href="https://www.samaritans.org/samaritans-ireland/" target="_blank" rel="noopener noreferrer" class="learn-more">Visit Website</a>
-        </p>
-      </div>
+        <summary>Samaritans</summary>
 
-      <div class="support-card">
-        <h3>Pieta</h3>
+        <div class="dropdown-content">
 
-        <p>
-          Support for people experiencing suicidal thoughts, self-harm, suicide
-          bereavement, or severe emotional distress.
-        </p>
+          <p>
+            Free, confidential emotional support available
+            day or night for anyone experiencing distress,
+            loneliness, anxiety, or struggling to cope.
+          </p>
 
-        <p class="credit">
-          Phone: 1800 247 247
-          Text: HELP to 51444
-          <a href="mailto:info@pieta.ie" class="learn-more">info@pieta.ie</a>
-          <a href="https://www.pieta.ie/how-we-can-help/helpline/" target="_blank" rel="noopener noreferrer" class="learn-more">Visit Website</a>
-        </p>
-      </div>
+          <p class="credit">
+            Phone:
+            <a href="tel:116123" class="learn-more">116 123</a>
+          </p>
 
-      <div class="support-card">
-        <h3>Text About It</h3>
+          <p>
+            <a href="mailto:jo@samaritans.ie"
+               class="learn-more">
+              jo@samaritans.ie
+            </a>
 
-        <p>
-          Free, anonymous, 24/7 text support for anyone who needs a calming chat
-          or immediate support by message.
-        </p>
+            <a href="https://www.samaritans.org/samaritans-ireland/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="learn-more">
+              Visit Website
+            </a>
+          </p>
 
-        <p class="credit">
-          Text: HELLO to 50808
-          <a href="https://www.textaboutit.ie/" target="_blank" rel="noopener noreferrer" class="learn-more">Visit Website</a>
-        </p>
-      </div>
+        </div>
 
-      <a href="#top" class="back-to-top">↑ Back to top</a>
+      </details>
+
+      <!-- PIETA -->
+      <details class="support-card dropdown-card service-dropdown"
+               data-search-terms="pieta suicide suicidal thoughts self harm bereavement emotional distress">
+
+        <summary>Pieta</summary>
+
+        <div class="dropdown-content">
+
+          <p>
+            Support for people experiencing suicidal
+            thoughts, self-harm, suicide bereavement,
+            or severe emotional distress.
+          </p>
+
+          <p class="credit">
+            Phone:
+            <a href="tel:1800247247" class="learn-more">1800 247 247</a>
+          </p>
+
+          <p class="credit">
+            Text: HELP to 51444
+          </p>
+
+          <p>
+            <a href="mailto:info@pieta.ie"
+               class="learn-more">
+              info@pieta.ie
+            </a>
+
+            <a href="https://www.pieta.ie/how-we-can-help/helpline/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="learn-more">
+              Visit Website
+            </a>
+          </p>
+
+        </div>
+
+      </details>
+
+      <!-- TEXT ABOUT IT -->
+      <details class="support-card dropdown-card service-dropdown"
+               data-search-terms="text about it 50808 crisis anonymous messaging chat 24/7">
+
+        <summary>Text About It</summary>
+
+        <div class="dropdown-content">
+
+          <p>
+            Free, anonymous, 24/7 text support for anyone
+            who needs a calming chat or immediate
+            support by message.
+          </p>
+
+          <p class="credit">
+            Text: HELLO to 50808
+          </p>
+
+          <a href="https://www.textaboutit.ie/"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="learn-more">
+            Visit Website
+          </a>
+
+        </div>
+
+      </details>
+
     </section>
 
-    <section class="fact-card">
-      <h2>Mental Health Information & Support</h2>
-
-      <div class="support-card">
-        <h3>HSE Your Mental Health Information Line</h3>
-
-        <p>
-          A 24/7 information line for mental health supports and services. This is
-          an information line, not a counselling service.
-        </p>
-
-        <p class="credit">
-          Phone: 1800 111 888
-          <a href="https://www2.hse.ie/mental-health/services-support/your-mental-health-information-line/" target="_blank" rel="noopener noreferrer" class="learn-more">Visit Website</a>
-        </p>
-      </div>
-
-      <div class="support-card">
-        <h3>Grow Mental Health</h3>
-
-        <p>
-          Peer-support groups for people dealing with mental health difficulties,
-          available online and in person.
-        </p>
-
-        <p class="credit">
-          Phone: 0818 474 474
-          <a href="https://grow.ie/" target="_blank" rel="noopener noreferrer" class="learn-more">Visit Website</a>
-        </p>
-      </div>
-
-      <div class="support-card">
-        <h3>Shine</h3>
-
-        <p>
-          Support for people living with mental health difficulties and for their
-          families, friends, and supporters.
-        </p>
-
-        <p class="credit">
-          Phone: 01 860 1610
-          <a href="mailto:support@shine.ie" class="learn-more">support@shine.ie</a>
-          <a href="https://shine.ie/" target="_blank" rel="noopener noreferrer" class="learn-more">Visit Website</a>
-        </p>
-      </div>
-
-      <div class="support-card">
-        <h3>Aware</h3>
-
-        <p>
-          Support, education, and recovery programmes for people affected by
-          depression, anxiety, bipolar disorder, and related mood challenges.
-        </p>
-
-        <p class="credit">
-          Phone: 1800 80 48 48
-          <a href="mailto:supportmail@aware.ie" class="learn-more">supportmail@aware.ie</a>
-          <a href="https://www.aware.ie" target="_blank" rel="noopener noreferrer" class="learn-more">Visit Website</a>
-        </p>
-      </div>
-
-      <div class="support-card">
-        <h3>Jigsaw</h3>
-
-        <p>
-          Free mental health support for young people aged 12 to 25 in Ireland.
-        </p>
-
-        <p class="credit">
-          Phone: 01 472 7010
-          <a href="mailto:info@jigsaw.ie" class="learn-more">info@jigsaw.ie</a>
-          <a href="https://jigsaw.ie/" target="_blank" rel="noopener noreferrer" class="learn-more">Visit Website</a>
-        </p>
-      </div>
-
-      <a href="#top" class="back-to-top">↑ Back to top</a>
-    </section>
+    <!-- ===================================== -->
+    <!-- MENTAL HEALTH INFORMATION AND SUPPORT -->
+    <!-- ===================================== -->
 
     <section class="fact-card">
-      <h2>If the danger is connected to abuse, violence, or safety at home</h2>
+
+      <h2>Mental Health Information &amp; Support</h2>
 
       <p>
-        If the crisis is connected to domestic abuse, sexual violence, coercive control,
-        child protection, or feeling unsafe around another person, the Abuse & Protection
-        page may be more useful.
+        Information, organisations and peer-support
+        services for mental health difficulties.
+      </p>
+
+      <!-- HSE YOUR MENTAL HEALTH -->
+      <details class="support-card dropdown-card service-dropdown"
+               data-search-terms="hse your mental health information line services supports">
+
+        <summary>HSE Your Mental Health Information Line</summary>
+
+        <div class="dropdown-content">
+
+          <p>
+            A 24/7 information line for mental health
+            supports and services. This is an information
+            line, not a counselling service.
+          </p>
+
+          <p class="credit">
+            Phone:
+            <a href="tel:1800111888" class="learn-more">1800 111 888</a>
+          </p>
+
+          <a href="https://www2.hse.ie/mental-health/services-support/your-mental-health-information-line/"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="learn-more">
+            Visit Website
+          </a>
+
+        </div>
+
+      </details>
+
+      <!-- GROW MENTAL HEALTH -->
+      <details class="support-card dropdown-card service-dropdown"
+               data-search-terms="grow mental health peer support groups meetings online in person">
+
+        <summary>Grow Mental Health</summary>
+
+        <div class="dropdown-content">
+
+          <p>
+            Peer-support groups for people dealing with
+            mental health difficulties, available online
+            and in person.
+          </p>
+
+          <p class="credit">
+            Phone:
+            <a href="tel:0818474474" class="learn-more">0818 474 474</a>
+          </p>
+
+          <a href="https://grow.ie/"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="learn-more">
+            Visit Website
+          </a>
+
+        </div>
+
+      </details>
+
+      <!-- SHINE -->
+      <details class="support-card dropdown-card service-dropdown"
+               data-search-terms="shine mental health families friends supporters">
+
+        <summary>Shine</summary>
+
+        <div class="dropdown-content">
+
+          <p>
+            Support for people living with mental health
+            difficulties and for their families,
+            friends, and supporters.
+          </p>
+
+          <p class="credit">
+            Phone:
+            <a href="tel:018601610" class="learn-more">01 860 1610</a>
+          </p>
+
+          <p>
+            <a href="mailto:support@shine.ie"
+               class="learn-more">
+              support@shine.ie
+            </a>
+
+            <a href="https://shine.ie/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="learn-more">
+              Visit Website
+            </a>
+          </p>
+
+        </div>
+
+      </details>
+
+      <!-- AWARE -->
+      <details class="support-card dropdown-card service-dropdown"
+               data-search-terms="aware depression anxiety bipolar mood support education recovery">
+
+        <summary>Aware</summary>
+
+        <div class="dropdown-content">
+
+          <p>
+            Support, education, and recovery programmes
+            for people affected by depression, anxiety,
+            bipolar disorder, and related mood challenges.
+          </p>
+
+          <p class="credit">
+            Phone:
+            <a href="tel:1800804848" class="learn-more">1800 80 48 48</a>
+          </p>
+
+          <p>
+            <a href="mailto:supportmail@aware.ie"
+               class="learn-more">
+              supportmail@aware.ie
+            </a>
+
+            <a href="https://www.aware.ie"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="learn-more">
+              Visit Website
+            </a>
+          </p>
+
+        </div>
+
+      </details>
+
+      <!-- JIGSAW -->
+      <details class="support-card dropdown-card service-dropdown"
+               data-search-terms="jigsaw young people youth mental health 12 25 ireland">
+
+        <summary>Jigsaw</summary>
+
+        <div class="dropdown-content">
+
+          <p>
+            Free mental health support for young people
+            aged 12 to 25 in Ireland.
+          </p>
+
+          <p class="credit">
+            Phone:
+            <a href="tel:014727010" class="learn-more">01 472 7010</a>
+          </p>
+
+          <p>
+            <a href="mailto:info@jigsaw.ie"
+               class="learn-more">
+              info@jigsaw.ie
+            </a>
+
+            <a href="https://jigsaw.ie/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="learn-more">
+              Visit Website
+            </a>
+          </p>
+
+        </div>
+
+      </details>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- ABUSE AND SAFETY -->
+    <!-- ===================================== -->
+
+    <section class="fact-card important-note">
+
+      <h2>
+        If the danger is connected to abuse,
+        violence, or safety at home
+      </h2>
+
+      <p>
+        If the crisis is connected to domestic abuse,
+        sexual violence, coercive control, child protection,
+        or feeling unsafe around another person,
+        the Abuse &amp; Protection page may be more useful.
       </p>
 
       <p>
-        <a href="../pages/abuse-protection.html" class="learn-more">Open Abuse & Protection</a>
+        <a href="../pages/abuse-protection.html"
+           class="learn-more">
+          Open Abuse &amp; Protection
+        </a>
       </p>
+
     </section>
 
+    <!-- ===================================== -->
+    <!-- OTHER SUPPORT ROUTES -->
+    <!-- ===================================== -->
+
+    <details class="fact-card dropdown-card">
+
+      <summary>Other Support Routes</summary>
+
+      <div class="dropdown-content">
+
+        <p>
+          If this is not the right page,
+          you can go back and choose another route.
+        </p>
+
+        <p>
+          <a href="../pages/support.html"
+             class="learn-more">
+            Back to Support Guide
+          </a>
+
+          <a href="../pages/addictionsupports.html"
+             class="learn-more">
+            Addiction Supports
+          </a>
+
+          <a href="../pages/housing-welfare-legal.html"
+             class="learn-more">
+            Housing, Welfare &amp; Legal
+          </a>
+        </p>
+
+      </div>
+
+    </details>
+
+    <!-- ===================================== -->
+    <!-- IMPORTANT INFORMATION -->
+    <!-- ===================================== -->
+
     <section class="fact-card">
-      <h2>Other Support Routes</h2>
 
-      <p>
-        If this is not the right page, you can go back and choose another route.
-      </p>
-
-      <p>
-        <a href="../pages/support.html" class="learn-more">Back to Support Guide</a>
-        <a href="../pages/addictionsupports.html" class="learn-more">Addiction Supports</a>
-        <a href="../pages/housing-welfare-legal.html" class="learn-more">Housing, Welfare & Legal</a>
-      </p>
-    </section>
-
-    <section class="fact-card">
       <h2>Important Note</h2>
 
       <p>
-        Mosaic does not provide emergency services, medical advice, diagnosis,
-        counselling, or treatment. If you or someone else is in immediate danger,
+        Mosaic does not provide emergency services,
+        medical advice, diagnosis, counselling, or treatment.
+        If you or someone else is in immediate danger,
         call 112 or 999.
       </p>
 
       <p>
-        Service information can change. Always check directly with the service before
-        making decisions about support, treatment, appointments, or access.
+        Service information can change.
+        Always check directly with the service before
+        making decisions about support, treatment,
+        appointments, or access.
       </p>
 
-      <a href="#top" class="back-to-top">↑ Back to top</a>
     </section>
+
+    <!-- BACK TO TOP -->
+    <div class="buttons">
+      <a href="#top">Back to Top</a>
+    </div>
 
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
-  <p>© 2026 Mosaic. Created by Steven Condra. All rights reserved.</p>
 
-  <p>
-    Mosaic is an early-stage recovery support project. It is not a medical,
-    counselling, emergency, or crisis service. If you need urgent help, contact emergency
-    services or a qualified professional.
-  </p>
+    <p>
+      © 2026 Mosaic. Created by Steven Condra.
+      All rights reserved.
+    </p>
 
-  <p>
-    Third-party service names, organisations and external links remain the property of their
-    respective owners.
-  </p>
-</footer>
+    <p>
+      Mosaic is an early-stage recovery support project.
+      It is not a medical, counselling, emergency,
+      or crisis service. If you need urgent help,
+      contact emergency services or a qualified professional.
+    </p>
 
+    <p>
+      Third-party service names, organisations
+      and external links remain the property
+      of their respective owners.
+    </p>
+
+  </footer>
+
+  <!-- SEARCH MENTAL HEALTH SUPPORTS -->
   <script>
+
     const supportSearch = document.getElementById("supportSearch");
-    const supportCards = document.querySelectorAll(".support-card");
+
+    const serviceDropdowns = document.querySelectorAll(
+      ".service-dropdown"
+    );
 
     supportSearch.addEventListener("input", function () {
+
       const searchText = supportSearch.value.toLowerCase().trim();
 
-      supportCards.forEach(function (card) {
-        const cardText = card.innerText.toLowerCase();
+      serviceDropdowns.forEach(function (group) {
 
-        if (cardText.includes(searchText)) {
-          card.style.display = "";
+        const searchableText = (
+          group.textContent + " " + group.dataset.searchTerms
+        ).toLowerCase();
+
+        if (searchText === "") {
+
+          group.style.display = "";
+          group.open = false;
+
         } else {
-          card.style.display = "none";
+
+          const isMatch = searchableText.includes(searchText);
+
+          group.style.display = isMatch ? "" : "none";
+          group.open = isMatch;
+
         }
+
       });
+
     });
+
   </script>
 
   <script src="../js/overlay.js"></script>

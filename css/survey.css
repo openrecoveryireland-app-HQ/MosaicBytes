@@ -501,8 +501,17 @@ section {
   }
 
   .site-logo {
-    max-width: 420px;
+    max-width: 260px;
   }
+  .main-nav {
+    gap: 8px;
+    margin: 12px 0 18px;
+}
+
+.main-nav a {
+    padding: 9px 14px;
+    font-size: 15px;
+}
 
   .tagline {
     font-size: 22px;
@@ -1694,6 +1703,26 @@ button.learn-more {
   .feature-intro-header h1 {
     font-size: 30px;
   }
+}
+
+/* REUSABLE IMPORTANT NOTE */
+
+.important-note {
+  background: #f2f7f7;
+  border-left: 5px solid #008c8c;
+  border-radius: 18px;
+  padding: 22px 28px;
+}
+
+.important-note h2 {
+  color: #004f4f;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.important-note p {
+  font-size: 15px;
+  line-height: 1.6;
 }
 
 

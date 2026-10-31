@@ -1,19 +1,26 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Peer Support Meetings | Mosaic</title>
+
   <link rel="stylesheet" href="../css/survey.css">
 </head>
 
 <body>
 
-  <img src="../images/logo100.png" alt="Mosaic logo" class="site-logo top-logo">
+  <!-- MOSAIC LOGO -->
+  <img src="../images/logo100.png"
+       alt="Mosaic logo"
+       class="site-logo top-logo">
 
+
+  <!-- MAIN NAVIGATION -->
   <nav class="main-nav">
     <a href="../index.html">Home</a>
-    <a href="../pages/app-guide.html">Mosaic Guide</a>
     <a href="../pages/app-support.html">App Support</a>
     <a href="../pages/did-you-know.html">Did You Know?</a>
     <a href="../pages/stats.html">Alcohol Statistics</a>
@@ -22,189 +29,426 @@
     <a href="../pages/music.html">Mosaic Music</a>
   </nav>
 
-  <nav class="support-sub-nav">
-  <a href="../pages/support.html">Support Home</a>
-  <a href="../pages/addictionsupports.html">Addiction</a>
-  <a href="../pages/peer-support-meetings.html">Meetings</a>
-  <a href="../pages/helplines-directories-professional-support.html">Helplines</a>
-  <a href="../pages/rtc.html">Treatment Centres</a>
-  <a href="../pages/community-addiction-supports.html">Community</a>
-  <a href="../pages/mental-health-crisis.html">Mental Health</a>
-  <a href="../pages/abuse-protection.html">Abuse & Safety</a>
-  <a href="../pages/housing-welfare-legal.html">Housing / Money / Legal</a>
-  <a href="../pages/research-public-information.html">Research</a>
-</nav>
 
-  <main class="survey-page">
-    <div id="top"></div>
+  <!-- MOSAIC PAGE HEADING -->
+  <!-- Reuses existing mosaic image and CSS -->
 
-    <section class="survey-intro fact-card">
+  <section class="fact-card feature-intro"
+           style="max-width:950px; width:calc(100% - 36px); margin:20px auto;">
+
+    <div class="feature-intro-header"
+         style="text-align:center;">
+
       <h1>Peer Support Meetings</h1>
+
+    </div>
+
+  </section>
+
+
+  <!-- SUPPORT NAVIGATION -->
+  <nav class="support-sub-nav" aria-label="Support categories">
+
+    <a href="../pages/support.html">Support Home</a>
+    <a href="../pages/addictionsupports.html">Addiction</a>
+    <a href="../pages/peer-support-meetings.html" class="support-sub-active"aria-current="page">Meetings</a>
+    <a href="../pages/helplines-directories-professional-support.html">Helplines</a>
+    <a href="../pages/rtc.html">Treatment Centres</a>
+    <a href="../pages/community-addiction-supports.html">Community</a>
+    <a href="../pages/mental-health-crisis.html">Mental Health</a>
+    <a href="../pages/abuse-protection.html">Abuse &amp; Safety</a>
+    <a href="../pages/housing-welfare-legal.html">Housing / Money / Legal</a>
+    <a href="../pages/research-public-information.html">Research</a>
+
+  </nav>
+
+
+  <main class="survey-page" id="top">
+
+    <!-- INTRODUCTION -->
+    <section class="fact-card">
+
       <p>
-        Peer-led recovery meetings and support groups for people affected by alcohol,
-        drugs, gambling, or someone else’s addiction.
+        Peer-led recovery meetings and support groups
+        for people affected by alcohol, drugs, gambling,
+        or someone else's addiction.
       </p>
+
     </section>
 
+
+    <!-- SEARCH -->
     <section class="support-search-box">
-      <label for="supportSearch">Search peer support meetings</label>
+
+      <label for="supportSearch">
+        Search peer support meetings
+      </label>
+
       <input
         type="text"
         id="supportSearch"
         placeholder="Search AA, NA, LifeRing, SMART, Al-Anon, gambling..."
       >
+
     </section>
 
+
+    <!-- ===================================== -->
+    <!-- MEETING SUPPORTS -->
+    <!-- ===================================== -->
+
     <section class="fact-card">
+
       <h2>Meeting Supports</h2>
 
-      <div class="support-card">
-        <h3>Alcoholics Anonymous</h3>
-
-        <p>
-          Peer-led meetings for people who want to stop drinking.
-        </p>
-
-        <p class="credit">
-          Phone: 01 842 0700
-          <a href="https://www.alcoholicsanonymous.ie" target="_blank" rel="noopener noreferrer" class="learn-more">Visit Website</a>
-        </p>
-      </div>
-
-      <div class="support-card">
-        <h3>Narcotics Anonymous</h3>
-
-        <p>
-          Peer-led meetings for people seeking freedom from active addiction,
-          regardless of the substance involved.
-        </p>
-
-        <p class="credit">
-          Phone: 01 672 8000
-          <a href="https://www.na-ireland.org" target="_blank" rel="noopener noreferrer" class="learn-more">Visit Website</a>
-        </p>
-      </div>
-
-      <div class="support-card">
-        <h3>LifeRing Ireland</h3>
-
-        <p>
-          Secular peer-support meetings for people who want to overcome alcohol,
-          drug, or behavioural addictions.
-        </p>
-
-        <p class="credit">
-          Peer support meetings
-          <a href="https://lifering.ie/" target="_blank" rel="noopener noreferrer" class="learn-more">Visit Website</a>
-        </p>
-      </div>
-
-      <div class="support-card">
-        <h3>SMART Recovery Ireland</h3>
-
-        <p>
-          Self-management recovery meetings using practical tools for addictive
-          behaviours, including alcohol, drugs, gambling, and other problems.
-        </p>
-
-        <p class="credit">
-          Online and local meetings
-          <a href="https://smartrecovery.ie/" target="_blank" rel="noopener noreferrer" class="learn-more">Visit Website</a>
-        </p>
-      </div>
-
-      <div class="support-card">
-        <h3>Al-Anon Family Groups</h3>
-
-        <p>
-          Support for families and friends affected by someone else’s drinking.
-        </p>
-
-        <p class="credit">
-          Phone: 01 873 2699
-          <a href="https://al-anonuk.org.uk/" target="_blank" rel="noopener noreferrer" class="learn-more">Visit Website</a>
-        </p>
-      </div>
-
-      <div class="support-card">
-        <h3>Gamblers Anonymous</h3>
-
-        <p>
-          Peer-led recovery meetings for people experiencing problems with gambling
-          and seeking support from others with similar experiences.
-        </p>
-
-        <p class="credit">
-          Phone: 01 872 1133
-          <a href="https://www.gamblersanonymous.ie" target="_blank" rel="noopener noreferrer" class="learn-more">Visit Website</a>
-        </p>
-      </div>
-
-      <a href="#top" class="back-to-top">↑ Back to top</a>
-    </section>
-
-    <section class="fact-card">
-      <h2>Other Addiction Support Routes</h2>
-
       <p>
-        If a meeting is not what you need right now, you can go back to the addiction
-        support guide and choose another route.
+        Select an organisation below to view
+        its details and official website.
       </p>
 
-      <p>
-        <a href="../pages/addictionsupports.html" class="learn-more">Back to Addiction Supports</a>
-        <a href="../pages/support.html" class="learn-more">Back to Support Guide</a>
-      </p>
+
+      <!-- ===================================== -->
+      <!-- ALCOHOLICS ANONYMOUS -->
+      <!-- ===================================== -->
+
+      <details class="support-card dropdown-card meeting-dropdown"
+               data-search-terms="aa alcoholics anonymous">
+
+        <summary>Alcoholics Anonymous</summary>
+
+        <div class="dropdown-content">
+
+          <p>
+            Peer-led meetings for people who want
+            to stop drinking.
+          </p>
+
+          <p class="credit">
+            Phone: 01 842 0700
+          </p>
+
+          <a href="https://www.alcoholicsanonymous.ie"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="learn-more">
+            Visit Website
+          </a>
+
+        </div>
+
+      </details>
+
+
+      <!-- ===================================== -->
+      <!-- NARCOTICS ANONYMOUS -->
+      <!-- ===================================== -->
+
+      <details class="support-card dropdown-card meeting-dropdown"
+               data-search-terms="na narcotics anonymous">
+
+        <summary>Narcotics Anonymous</summary>
+
+        <div class="dropdown-content">
+
+          <p>
+            Peer-led meetings for people seeking
+            freedom from active addiction,
+            regardless of the substance involved.
+          </p>
+
+          <p class="credit">
+            Phone: 01 672 8000
+          </p>
+
+          <a href="https://www.na-ireland.org"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="learn-more">
+            Visit Website
+          </a>
+
+        </div>
+
+      </details>
+
+
+      <!-- ===================================== -->
+      <!-- LIFERING IRELAND -->
+      <!-- ===================================== -->
+
+      <details class="support-card dropdown-card meeting-dropdown"
+               data-search-terms="lifering ireland secular recovery">
+
+        <summary>LifeRing Ireland</summary>
+
+        <div class="dropdown-content">
+
+          <p>
+            Secular peer-support meetings for people
+            who want to overcome alcohol, drug,
+            or behavioural addictions.
+          </p>
+
+          <p class="credit">
+            Peer support meetings
+          </p>
+
+          <a href="https://lifering.ie/"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="learn-more">
+            Visit Website
+          </a>
+
+        </div>
+
+      </details>
+
+
+      <!-- ===================================== -->
+      <!-- SMART RECOVERY IRELAND -->
+      <!-- ===================================== -->
+
+      <details class="support-card dropdown-card meeting-dropdown"
+               data-search-terms="smart recovery ireland">
+
+        <summary>SMART Recovery Ireland</summary>
+
+        <div class="dropdown-content">
+
+          <p>
+            Self-management recovery meetings using
+            practical tools for addictive behaviours,
+            including alcohol, drugs, gambling,
+            and other problems.
+          </p>
+
+          <p class="credit">
+            Online and local meetings
+          </p>
+
+          <a href="https://smartrecovery.ie/"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="learn-more">
+            Visit Website
+          </a>
+
+        </div>
+
+      </details>
+
+
+      <!-- ===================================== -->
+      <!-- AL-ANON FAMILY GROUPS -->
+      <!-- ===================================== -->
+
+      <details class="support-card dropdown-card meeting-dropdown"
+               data-search-terms="al anon al-anon family friends">
+
+        <summary>Al-Anon Family Groups</summary>
+
+        <div class="dropdown-content">
+
+          <p>
+            Support for families and friends affected
+            by someone else's drinking.
+          </p>
+
+          <p class="credit">
+            Phone: 01 873 2699
+          </p>
+
+          <a href="https://al-anonuk.org.uk/"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="learn-more">
+            Visit Website
+          </a>
+
+        </div>
+
+      </details>
+
+
+      <!-- ===================================== -->
+      <!-- GAMBLERS ANONYMOUS -->
+      <!-- ===================================== -->
+
+      <details class="support-card dropdown-card meeting-dropdown"
+               data-search-terms="ga gamblers anonymous gambling">
+
+        <summary>Gamblers Anonymous</summary>
+
+        <div class="dropdown-content">
+
+          <p>
+            Peer-led recovery meetings for people
+            experiencing problems with gambling
+            and seeking support from others
+            with similar experiences.
+          </p>
+
+          <p class="credit">
+            Phone: 01 872 1133
+          </p>
+
+          <a href="https://www.gamblersanonymous.ie"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="learn-more">
+            Visit Website
+          </a>
+
+        </div>
+
+      </details>
+
+
+      <!-- ===================================== -->
+      <!-- OTHER ADDICTION SUPPORT GROUPS -->
+      <!-- ===================================== -->
+
+      <details class="support-card dropdown-card meeting-dropdown"
+               data-search-terms="other addiction support groups meetings">
+
+        <summary>Other Addiction Support Groups</summary>
+
+        <div class="dropdown-content">
+
+          <p>
+            If the support group you are looking for
+            is not listed above, you can explore
+            other support routes through the
+            Mosaic Addiction Supports guide.
+          </p>
+
+          <p>
+            The guide includes information about
+            addiction support, professional services,
+            community supports, and treatment options.
+          </p>
+
+          <a href="../pages/addictionsupports.html"
+             class="learn-more">
+            Addiction Supports
+          </a>
+
+          <a href="../pages/support.html"
+             class="learn-more">
+            Support Home
+          </a>
+
+        </div>
+
+      </details>
+
     </section>
 
-    <section class="fact-card">
+
+    <!-- ===================================== -->
+    <!-- IMPORTANT INFORMATION -->
+    <!-- ===================================== -->
+
+    <section class="fact-card important-note">
+
       <h2>Important Note</h2>
 
       <p>
-        Mosaic does not run these meetings and does not provide emergency
-        services, medical advice, diagnosis, counselling, or treatment.
+        Mosaic does not run these meetings and
+        does not provide emergency services,
+        medical advice, diagnosis, counselling,
+        or treatment.
       </p>
 
       <p>
-        Meeting times, contact details, and access arrangements can change.
-        Always check directly with the official organisation before attending.
+        Meeting times, contact details, and access
+        arrangements can change. Always check directly
+        with the official organisation before attending.
       </p>
+
     </section>
+
+
+    <!-- BACK TO TOP -->
+    <div class="buttons">
+      <a href="#top">Back to Top</a>
+    </div>
 
   </main>
 
+
+  <!-- ===================================== -->
+  <!-- FOOTER -->
+  <!-- ===================================== -->
+
   <footer class="site-footer">
-  <p>© 2026 Mosaic. Created by Steven Condra. All rights reserved.</p>
 
-  <p>
-    Mosaic is an early-stage recovery support project. It is not a medical,
-    counselling, emergency, or crisis service. If you need urgent help, contact emergency
-    services or a qualified professional.
-  </p>
+    <p>
+      © 2026 Mosaic. Created by Steven Condra.
+      All rights reserved.
+    </p>
 
-  <p>
-    Third-party service names, organisations and external links remain the property of their
-    respective owners.
-  </p>
-</footer>
+    <p>
+      Mosaic is an early-stage recovery support project.
+      It is not a medical, counselling, emergency,
+      or crisis service. If you need urgent help,
+      contact emergency services or a qualified professional.
+    </p>
+
+    <p>
+      Third-party service names, organisations
+      and external links remain the property
+      of their respective owners.
+    </p>
+
+  </footer>
+
+
+  <!-- ===================================== -->
+  <!-- SEARCH MEETING SUPPORTS -->
+  <!-- ===================================== -->
 
   <script>
+
     const supportSearch = document.getElementById("supportSearch");
-    const supportCards = document.querySelectorAll(".support-card");
+
+    const meetingDropdowns = document.querySelectorAll(
+      ".meeting-dropdown"
+    );
 
     supportSearch.addEventListener("input", function () {
+
       const searchText = supportSearch.value.toLowerCase().trim();
 
-      supportCards.forEach(function (card) {
-        const cardText = card.innerText.toLowerCase();
+      meetingDropdowns.forEach(function (group) {
 
-        if (cardText.includes(searchText)) {
-          card.style.display = "";
+        const searchableText = (
+          group.textContent + " " + group.dataset.searchTerms
+        ).toLowerCase();
+
+        if (searchText === "") {
+
+          // Show all organisations and close dropdowns.
+          group.style.display = "";
+          group.open = false;
+
         } else {
-          card.style.display = "none";
+
+          // Show matching organisations only.
+          const isMatch = searchableText.includes(searchText);
+
+          group.style.display = isMatch ? "" : "none";
+
+          // Open matching organisations.
+          group.open = isMatch;
+
         }
+
       });
+
     });
+
   </script>
 
   <script src="../js/overlay.js"></script>
